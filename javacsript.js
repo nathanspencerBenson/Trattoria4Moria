@@ -85,7 +85,7 @@ function myFunction(x) {
         }
         
     
-        window.setInterval(changeImage, 2000);;
+        window.setInterval(changeImage, 1500);;
     }
     
   }
