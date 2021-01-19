@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;400&family=Lobster&family=Playfair+Display&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* sitcky-menu */
+.sticky-menu{
+    font-family: 'Playfair Display';
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8)
+
+}
+#sticky-logo{
+    position: absolute;
+    top: 0;
+    margin-top: -120px;
+    font-size: 1.5em;
+    font-family: 'Lobster', 'cursive';
+    color: black;
+}
+.sticky-menu p{
+    color:white;
+}
+.sticky-menu p:hover{
+    font-weight: 900;
+}
+
+.sticky-menu a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* sticky menu links */
+
+.coffee-div div{
+    background: url("../images/sticky-menu-images/coffeesticky.svg");
+}
+.beer-div div{
+    background: url("../images/sticky-menu-images/beer.svg")
+}
+
+.wine-div div{
+    background: url("../images/sticky-menu-images/wine.svg")
+}
+.soda-div div{
+    background: url("../images/sticky-menu-images/soft-drink.svg");
+}
+
+.coffee-div div, .beer-div div, .wine-div div, .soda-div div{
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/* sticky menu hover */
+.coffee-div:hover div{
+    background: url("../images/sticky-menu-images/coffeered.svg");
+}
+
+.beer-div:hover div{
+    background: url("../images/sticky-menu-images/beerred.svg")
+}
+
+.wine-div:hover div{
+    background: url("../images/sticky-menu-images/winered.svg")
+}
+
+.soda-div:hover div{
+    background: url("../images/sticky-menu-images/soft-drinkred.svg")
+}
+
+.coffee-div:hover p, .beer-div:hover p, .wine-div:hover p, .soda-div:hover p {
+    color: red;
+}
+
+
+h2{
+    text-align: center;
+}
+
+main{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #222222;
+    font-family: 'Imbue', 'San-serif';
+    font-size: 1.2em;
+
+}
+
+.sardinia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url("../images/drinks.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+ 
+
+
+h1{
+    font-family: 'Playfair Display', 'cursive';
+    font-size: 5em;
+    width: 100%;
+}
+
+h2{
+    margin: 50px 0;
+}
+.wine-image{
+    margin-top: 20px;
+    background: url("../images/wines.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+.coffee-image{
+    margin-top: 150px;
+    background: url("../images/coffee.webp"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+
+}
+.beer-image{
+    margin-top: 20px;
+    background: url("../images/beer.jpg"), linear-gradient(rgba(0,0,0,0.5 ),rgba(0,0,0,0.5));
+}
+.softdrink-image{
+    margin-top: 20px;
+    background: url("../images/softdrink.jpg"), linear-gradient(rgba(0,0,0,0.5 ),rgba(0,0,0,0.5));
+}
+.coffee-image, .wine-image, .beer-image, .softdrink-image{
+    
+    margin-bottom: 20px;
+    width: 60%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+
+}
+
+
+.hotdrinks-items, .beer-items, .softdrink-items, .wine-items{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    border-bottom: 2px solid #222222;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    
+}
+
+@media only screen and (max-width: 1024px){
+
+    
+    .hotdrinks-items, .beer-items, .softdrink-items, .wine-items{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .coffee-image, .wine-image, .beer-image{
+        width: 85vw;
+    
+    }
+}
+@media only screen and (max-width : 768px) {
+    
+      h2, .sardinia{
+       
+       align-items: center;
+   }
+   .sardinia{
+       justify-content: center;;
+       text-align: center;
+   }
+   
+   .hotdrinks-items div, .beer-items div, .softdrink-items div, .wine-items div{       
+       text-align: center;
+    
+   }  
+   #hotdrink-h2{
+       margin-top: 30px;
+       
+   }
+   .coffee-image, .wine-image, .beer-image, .softdrink-image{
+    width: 100vw;
+
+}
+
+
+
+h1 {
+    font-size:2.5em;
+   
+}
+    h2 {
+        font-size: 1.5em;
+    }
+    .sticky-menu{
+        flex-direction: column;
+        left: 0;
+        height: 100vh;
+        width: 15vw;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: -100vh;
+        overflow-x: auto;
+    }
+
+    .sticky-menu p{
+        display: none;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+      }
+      
+      /* Hide scrollbar for IE, Edge and Firefox */
+      html {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+
+    .soda-div{
+        margin-bottom: 50px;
+    }
+
+    .softdrink-items{
+        border-bottom: none;
+    }
+    main div>div{
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    footer{
+        z-index: 4;
+    }
+}

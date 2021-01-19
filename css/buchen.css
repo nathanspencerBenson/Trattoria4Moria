@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;400&family=Lobster&family=Playfair+Display&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: #e4e2e2;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    background-color:black;
+    /* background-color: black; */
+    z-index: 3;
+    border-bottom: 2px solid white;
+}
+
+header a {
+    color:white;
+}

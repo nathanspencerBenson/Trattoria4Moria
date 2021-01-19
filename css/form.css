@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;400&family=Lobster&family=Playfair+Display&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.nav-links a{
+  font-size: 1.8em;
+}
+
+.logo a{
+  font-size: 3.5em;
+}
+
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sardinia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url("../images/sardinia.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-blend-mode: overlay;
+  width: 100vw;
+  height: 400px;
+  line-height: 1.5em;
+ 
+}
+.sardinia h1{
+  font-family: 'Playfair Display', 'cursive';
+  font-size: 5em;
+}
+
+main p{
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.container{
+  margin-top: 50px;
+}
+
+
+
+.panel{
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+  border-radius: 6px;
+  border: 0;
+}
+@-moz-document url-prefix() {
+    .form-control{
+      height: auto;
+    }
+}
+.panel-primary{
+  background-color: #2c3e50;
+  color: #fff;
+}
+.panel-primary>.panel-heading {
+    color: #fff;
+    font-size: 20px;
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+}
+.btn-warning{
+  background-color: transparent;
+  border-color: #bdc3c7;
+}
+.btn-raised{
+  background: black;
+  border: none;
+}
+
+
+
+@media only screen and (max-width : 768px){
+ .sardinia   h1 {
+    font-size:3em;
+
+}
+
+
+}
+
+
+
+
+
+
+

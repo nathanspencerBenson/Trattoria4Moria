@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;400&family=Lobster&family=Playfair+Display&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+.nav-links a{
+  font-size: 1.8em;
+}
+
+.logo a{
+  font-size: 3.5em;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+}
+
+
+.sardinia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url("../images/sardinia.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    width: 100vw;
+    height: 400px;
+}
+
+.container{
+  padding: 50px;
+}
+
+.sardinia2{
+  height: 400px;
+}
+.sardinia h1{
+    font-family: 'Playfair Display', 'cursive';
+    font-size: 5em;
+}
+
+@media only screen and (max-width : 768px){
+  .sardinia   h1 {
+     font-size:3em;
+ 
+ }
+ 
+ 
+ }

@@ -1,0 +1,114 @@
+.sardinia2{
+  background: url("../images/sardinia2.jpg"), linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 300px;
+}
+
+
+
+
+footer{
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Playfair Display';
+    background: black;
+    border-top: #222222 2px solid;
+    color: white;
+    padding: 100px 0; 
+  }
+  
+  footer>div{
+    text-align: center;
+  }
+  
+  
+  .footer-logo{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    font-size: 50px;
+    font-family: 'Lobster', 'cursive';
+  }
+
+  footer a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer a:hover{
+    color: red;
+    text-decoration: none;
+  }
+  .footer-makeabooking:hover{
+    transform: scale(1.2);
+    font-weight: bold; 
+  }
+  .footer a:hover>div{
+    transform: scale(1.2);
+  }
+
+  
+  
+  .tripadvisor{
+    margin: 20px 0;
+    background: url("../images/pngwing.com.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+  }
+  
+  .footer-logo>a:hover{
+    transform: scale(1.2);
+  }
+  
+  .tripadvisor a {
+    height: 100%;
+    width: 100%;
+  }
+
+  .map {
+    height: 200px;
+    width: 100%;
+    border-radius: 15px;
+    align-self: center;
+
+  }
+
+  .map2 {
+    display: none;
+  }
+
+  @media only screen and (max-width : 1200px) {
+    footer{
+      flex-direction: column;
+    }
+
+    .kontakt{
+      order: 2;
+      margin-bottom: 20px;
+    }
+
+    .footer-logo{
+      order: 1;
+    }
+
+    .offnungszeiten{
+      order: 3;
+    }
+    .map2 {
+      order: 4;
+      display: block;
+      margin-top: 20px;
+    }
+
+    .map1{
+      display: none;
+    }
+  
+    }

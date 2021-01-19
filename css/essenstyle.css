@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;400&family=Lobster&family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body{
+
+    background-color: white;
+    
+}
+
+
+.sardinia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url("../images/speisekarte.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center;
+    width: 100vw;
+    height: 400px;
+    line-height: 1.5em;
+}
+
+h1{
+    font-family: 'Playfair Display', 'cursive';
+    font-size: 5em;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+/* sticky-menu */
+
+.sticky-menu{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    font-family: 'Playfair Display';   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.904);
+
+}
+
+.sticky-menu p{
+    color:white;
+}
+.sticky-menu a:hover p{
+    color: red;
+}
+
+
+/* sticky Menu white images */
+.antipasti-div{
+    background: url("../images/sticky-menu-images/antipasti.svg");
+}
+.soup-div{
+    background: url("../images/sticky-menu-images/soup.svg")
+}
+.salad-div{
+    background: url("../images/sticky-menu-images/salad.svg");
+}
+
+.pizza-div{
+    background: url("../images/sticky-menu-images/pizza.svg");
+}
+.pasta-div{
+    background: url("../images/sticky-menu-images/ravioli.svg")
+}
+.meat-div{
+    background:url("../images/sticky-menu-images/meat.svg")
+}
+.fish-div{
+    background:url("../images/sticky-menu-images/fish.svg")
+}
+.cheese-div{
+    background:url("../images/sticky-menu-images/cheese.svg")
+}
+
+.dessert-div{
+    background:url("../images/sticky-menu-images/dessert.svg")
+    
+}
+.pizza-div, .meat-div, .fish-div, .cheese-div, .pasta-div, .salad-div, .soup-div, .antipasti-div, .dessert-div{
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    width: 40px;   
+}
+/* sticky Menu red imageson hover */
+.antipasti-div:hover{
+    background: url("../images/sticky-menu-images/antipastired.svg")
+}
+.soup-div:hover{
+    background: url("../images/sticky-menu-images/soupred.svg");
+}
+.salad-div:hover{
+    background: url("../images/sticky-menu-images/saladred.svg")
+}
+
+.pizza-div:hover{
+    background: url("../images/sticky-menu-images/pizzared.svg"); 
+    
+}
+.pasta-div:hover{
+    background: url("../images/sticky-menu-images/raviolired.svg")
+}
+.meat-div:hover{
+    background:url("../images/sticky-menu-images/meatred.svg")
+}
+.fish-div:hover{
+    background: url("../images/sticky-menu-images/fishred.svg")
+}
+
+.cheese-div:hover{
+    background:url("../images/sticky-menu-images/cheesered.svg")
+}
+.dessert-div:hover{
+    background:url("../images/sticky-menu-images/dessertred.svg")
+}
+.pizza-div:hover, .meat-div:hover, .fish-div:hover, .cheese-div:hover, .pasta-div:hover, .salad-div:hover, .soup-div:hover, .antipasti-div:hover, .dessert-div:hover{
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    width: 40px;  
+
+}
+
+
+/* end of */
+.speisekarte-items{
+    margin: 50px 0;
+}
+
+h2{
+    font-family: 'Playfair Display', 'cursive';
+    font-size: 2em;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #222222;
+    font-family: 'Imbue', 'San-serif';
+    font-size: 1.5em;
+
+}
+
+
+main div>div{
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.speisekarte-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+
+
+
+.antipasti-items, .suppen-items, .salate-items, .fischgerichte-items, .fleischgerichte-items, .formaggi-items, .dolci-items, .pesce-items{
+    display: grid;
+    width: 60%;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    border-bottom: 2px solid #222222;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    
+}
+.antipasti-items{
+    margin-bottom: 0;
+}
+
+.antipasti-image{
+background: url("../images/vorspeisen.jpg");
+}
+.suppen-image{
+    background: url("../images/suppen.jpg");
+}
+.insalata-image{
+    background: url("../images/insalata.jpg");
+}
+.pasta-image{
+    background: url("../images/pasta.jpg");
+}
+.pizza-image{
+    background: url("../images/pizza.jpg")
+}
+.pesce-image{
+    background: url("../images/pesce.jpg")
+}
+.meat-image{
+    background: url("../images/meat.jpg")
+}
+.formaggi-image{
+    background: url("../images/parmagianno.jpg")
+}
+.dolci-image{
+    background: url("../images/dolci.jpg")
+}
+
+.antipasti-image, .suppen-image, .insalata-image, .pasta-image, .pizza-image, .pesce-image, .meat-image, .formaggi-image, .dolci-image{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.pasta-items, .pizza-items{
+    display:grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    border-bottom: 2px solid #222222;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+
+}
+
+/* media query */
+
+
+@media only screen and (max-width: 1024px) {
+    main{
+        align-items: center;
+        
+    }
+    
+    .antipasti-items, .pasta-items, .pizza-items, .suppen-items, .salate-items, .fischgerichte-items, .fleischgerichte-items, .formaggi-items, .dolci-items, .pesce-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .antipasti-image, .suppen-image, .insalata-image, .pasta-image, .pizza-image, .pesce-image, .meat-image, .formaggi-image, .dolci-image{
+        width: 90vw;
+    }
+
+    .sticky-menu{
+        align-items: center;
+    }
+}
+@media only screen and (max-width : 768px) {
+    
+    /* main, .sardinia {
+        margin-left: 20vw;
+        width: 80vw;
+        
+    } */
+    .antipasti-image, .suppen-image, .insalata-image, .pasta-image, .pizza-image, .pesce-image, .meat-image, .formaggi-image, .dolci-image{
+       
+        width: 100%;
+    }
+
+    h1 {
+        font-size:2.5em;
+        margin-left: 15vw;
+    }
+    h2 {
+        font-size: 1em;
+        margin-left: 15vw;
+    }
+    .sticky-menu{
+        flex-direction: column;
+        left: 0;
+        height: 100vh;
+        min-height: fit-content;
+        width: fit-content;
+        align-items: flex-start;
+        margin-bottom: -100vh;
+
+    }
+
+    .sticky-menu p{
+        display: none;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+      }
+      
+      /* Hide scrollbar for IE, Edge and Firefox */
+      html {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+
+    .sticky-menu a{
+        margin: 0 20px;
+        
+    }
+
+    main div > div{
+        margin-left: 15vw;
+        
+
+    }
+    .speisekarte-items{
+        margin-left: 15vw;
+    }
+    .pizza-div, .meat-div, .fish-div, .cheese-div, .pasta-div, .salad-div, .soup-div, .antipasti-div, .dessert-div{
+       
+        height: 30px;
+        width: 30px;   
+    }
+    .pizza-div:hover, .meat-div:hover, .fish-div:hover, .cheese-div:hover, .pasta-div:hover, .salad-div:hover, .soup-div:hover, .antipasti-div:hover, .dessert-div:hover{
+        height: 30px;
+        width: 30px;   
+    }
+
+
+    
+}
+
+
+
