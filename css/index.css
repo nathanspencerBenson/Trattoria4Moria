@@ -7,7 +7,6 @@
 }
 
 /* nav */
-@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;400&family=Lobster&display=swap');
 nav{
     display: flex;
     justify-content: space-between;
