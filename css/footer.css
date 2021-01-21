@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
 .sardinia2{
   background: url("../images/sardinia2.jpg"), linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
   background-repeat: no-repeat;
@@ -32,8 +33,9 @@ footer{
     display: flex;
     flex-direction: column; 
     align-items: center;     
-    font-size: 50px;
-    font-family: 'Lobster', 'cursive';
+    font-size: 1em;
+    font-family: 'Quattrocento', 'cursive';
+    letter-spacing: 0.5em;
   }
 
   footer a{

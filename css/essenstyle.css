@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;400&family=Lobster&family=Playfair+Display&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
 
 *{
     margin: 0;
@@ -14,6 +15,7 @@
 
 
 .sardinia{
+    margin-top: -100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,7 +50,7 @@ h2{
 .sticky-menu{
     position: sticky;
     top: 0;
-    z-index: 2;
+     z-index: 2;
     font-family: 'Playfair Display';   
     display: flex;
     flex-direction: row;
@@ -57,12 +59,15 @@ h2{
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.904);
+    background-color: rgba(0, 0, 0, 0.712);
 
 }
 
 .sticky-menu p{
     color:white;
+}
+.sticky-menu a{
+    text-decoration: none;
 }
 .sticky-menu a:hover p{
     color: red;
@@ -161,8 +166,8 @@ main{
     flex-direction: column;
     align-items: center;
     color: #222222;
-    font-family: 'Imbue', 'San-serif';
-    font-size: 1.5em;
+    font-family: 'Playfair Display', 'San-serif';
+    
 
 }
 
@@ -182,11 +187,9 @@ main div>div{
 
 
 
-.antipasti-items, .suppen-items, .salate-items, .fischgerichte-items, .fleischgerichte-items, .formaggi-items, .dolci-items, .pesce-items{
-    display: grid;
-    width: 60%;
-    justify-items: center;
-    grid-template-columns: repeat(2, 1fr);
+.antipasti-items, .suppen-items, .salate-items, .fischgerichte-items, .fleischgerichte-items, .formaggi-items, .dolci-items, .pesce-items, .pasta-items, .pizza-items{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     border-bottom: 2px solid #222222;
     margin-bottom: 60px;
@@ -236,16 +239,6 @@ background: url("../images/vorspeisen.jpg");
     
 }
 
-.pasta-items, .pizza-items{
-    display:grid;
-    justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-    border-bottom: 2px solid #222222;
-    margin-bottom: 60px;
-    padding-bottom: 60px;
-
-}
 
 /* media query */
 
@@ -256,10 +249,7 @@ background: url("../images/vorspeisen.jpg");
         
     }
     
-    .antipasti-items, .pasta-items, .pizza-items, .suppen-items, .salate-items, .fischgerichte-items, .fleischgerichte-items, .formaggi-items, .dolci-items, .pesce-items{
-        display: flex;
-        flex-direction: column;
-    }
+    
     .antipasti-image, .suppen-image, .insalata-image, .pasta-image, .pizza-image, .pesce-image, .meat-image, .formaggi-image, .dolci-image{
         width: 90vw;
     }
@@ -287,6 +277,13 @@ background: url("../images/vorspeisen.jpg");
     h2 {
         font-size: 1em;
         margin-left: 15vw;
+    }
+
+    h3{
+        font-size: 0.8em;
+    }
+    p{
+        font-size: 0.8em;
     }
     .sticky-menu{
         flex-direction: column;

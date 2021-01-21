@@ -16,21 +16,25 @@ nav{
     background-color: black;
     font-family: 'Lobster', 'cursive';
     border-bottom: white solid 1px;
+    animation: height 4s;
 }
 
-.logo a{
+/* .logo a{
     color: white;
     font-size: 3em;
     margin-left: 20px;
     text-decoration: none;
     
-}
+} */
 
 .nav-links{
     display: flex;
     justify-content: space-around;
     width: 40%;
     margin-right: 5%;
+    animation: opacity 1s forwards;
+    animation-delay: 3s;
+    opacity: 0;
     
 }
 
@@ -49,9 +53,16 @@ nav a:hover{
     color: red;
 }
 
+.container .btn a span{
+    animation: opacity 1s;
+}
+
 .burger{
     display: none;
     cursor: pointer;
+    animation: opacity 1s forwards;
+    animation-delay: 3s;
+    opacity: 0;
 }
 
 .burger div{
@@ -233,7 +244,7 @@ main > div{
 }
 
 .menu{
-  
+    animation: opacity 2s;
     display: flex;
     justify-content: center;
     width:100%;

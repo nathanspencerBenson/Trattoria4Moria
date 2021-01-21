@@ -6,12 +6,18 @@
   box-sizing: border-box;
 } 
 
-.nav-links a{
+/* .nav-links a{
   font-size: 1.8em;
 }
 
 .logo a{
   font-size: 3.5em;
+} */
+.nav-links{
+  width: 50%;
+}
+nav{
+  font-size: 1.1em;
 }
 
 
@@ -25,6 +31,7 @@ main{
 
 .sardinia{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
@@ -34,9 +41,10 @@ main{
     background-blend-mode: overlay;
     width: 100vw;
     height: 400px;
+    line-height: 1.5em;
 }
 
-.container{
+.container-uber{
   padding: 50px;
 }
 

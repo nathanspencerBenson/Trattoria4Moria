@@ -12,6 +12,7 @@ let screenStart = document.querySelector('.screen-start');
 let screenEssen = document.querySelector('.screen-essen');
 let screenTrinken = document.querySelector('.screen-trinken');
 let screenBesuch = document.querySelector('.screen-besuch');
+let startMenu = document.querySelector('.startMenu');
 
 
 essenButton.addEventListener('mouseover', function(e){
@@ -68,13 +69,13 @@ function myFunction(x) {
             screenEssen.style = "opacity: 0;";
             screenStart.style = "opacity: 0;";
             screenTrinken.style = "opacity: 0;";
-            screenBesuch.style = "opacity: 0;";
+            screenBesuch.style = "opacity: 0;";          
             BackgroundImg[i].style = "opacity: 1";
             
             essenButton.style = "none";
             trinkenButton.style = "none";
             besuchButton.style = "none";
-            essenh1.style = "none";
+            essenh1.style = "none"; 
             trinkenh1.style = "none";
             besuchh1.style = "none";
             menuButtons[i].style = "border: 2px solid white";
@@ -85,12 +86,13 @@ function myFunction(x) {
         }
         
     
-        window.setInterval(changeImage, 1500);;
+        window.setInterval(changeImage, 2000);;
     }
     
   }
   var x = window.matchMedia("(max-width: 1024px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
+
 
 // 

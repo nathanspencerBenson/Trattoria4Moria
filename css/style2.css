@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Imbue:wght@100;400&family=Lobster&display=swap");
+.logo-animated {
+  font-family: 'Lobster', 'cursive';
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  height: 100%;
+  border: red 2px solid;
+}
+
+.container {
+  height: 100%;
+  z-index: 20;
+  font-size: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  line-height: 3em;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  margin: auto;
+  background: #fff;
+}
+
+.container.hover::after {
+  width: 100%;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.container.hover div:nth-child(1) {
+  -webkit-transition: all 1s 0.05s ease;
+  transition: all 1s 0.05s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(49px) translateX(-59px) translateZ(88px) rotateX(367deg) rotateY(701deg);
+          transform: perspective(2000px) translateY(49px) translateX(-59px) translateZ(88px) rotateX(367deg) rotateY(701deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container.hover div:nth-child(2) {
+  -webkit-transition: all 1s 0.1s ease;
+  transition: all 1s 0.1s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(207px) translateX(214px) translateZ(30px) rotateX(677deg) rotateY(363deg);
+          transform: perspective(2000px) translateY(207px) translateX(214px) translateZ(30px) rotateX(677deg) rotateY(363deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container.hover div:nth-child(3) {
+  -webkit-transition: all 1s 0.15s ease;
+  transition: all 1s 0.15s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(217px) translateX(73px) translateZ(51px) rotateX(907deg) rotateY(777deg);
+          transform: perspective(2000px) translateY(217px) translateX(73px) translateZ(51px) rotateX(907deg) rotateY(777deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container.hover div:nth-child(4) {
+  -webkit-transition: all 1s 0.2s ease;
+  transition: all 1s 0.2s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(-51px) translateX(192px) translateZ(18px) rotateX(781deg) rotateY(448deg);
+          transform: perspective(2000px) translateY(-51px) translateX(192px) translateZ(18px) rotateX(781deg) rotateY(448deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container.hover div:nth-child(5) {
+  -webkit-transition: all 1s 0.25s ease;
+  transition: all 1s 0.25s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(48px) translateX(73px) translateZ(-93px) rotateX(498deg) rotateY(957deg);
+          transform: perspective(2000px) translateY(48px) translateX(73px) translateZ(-93px) rotateX(498deg) rotateY(957deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container.hover div:nth-child(6) {
+  -webkit-transition: all 1s 0.3s ease;
+  transition: all 1s 0.3s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(109px) translateX(45px) translateZ(-67px) rotateX(901deg) rotateY(622deg);
+          transform: perspective(2000px) translateY(109px) translateX(45px) translateZ(-67px) rotateX(901deg) rotateY(622deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container.hover div:nth-child(7) {
+  -webkit-transition: all 1s 0.35s ease;
+  transition: all 1s 0.35s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(49px) translateX(49px) translateZ(136px) rotateX(965deg) rotateY(896deg);
+          transform: perspective(2000px) translateY(49px) translateX(49px) translateZ(136px) rotateX(965deg) rotateY(896deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container.hover div:nth-child(8) {
+  -webkit-transition: all 1s 0.4s ease;
+  transition: all 1s 0.4s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(226px) translateX(-22px) translateZ(89px) rotateX(432deg) rotateY(697deg);
+          transform: perspective(2000px) translateY(226px) translateX(-22px) translateZ(89px) rotateX(432deg) rotateY(697deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container.hover div:nth-child(9) {
+  -webkit-transition: all 1s 0.45s ease;
+  transition: all 1s 0.45s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(-21px) translateX(258px) translateZ(216px) rotateX(361deg) rotateY(523deg);
+          transform: perspective(2000px) translateY(-21px) translateX(258px) translateZ(216px) rotateX(361deg) rotateY(523deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container.hover div:nth-child(10) {
+  -webkit-transition: all 1s 0.5s ease;
+  transition: all 1s 0.5s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(160px) translateX(100px) translateZ(54px) rotateX(819deg) rotateY(814deg);
+          transform: perspective(2000px) translateY(160px) translateX(100px) translateZ(54px) rotateX(819deg) rotateY(814deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container.hover div:nth-child(11) {
+  -webkit-transition: all 1s 0.55s ease;
+  transition: all 1s 0.55s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(288px) translateX(-97px) translateZ(58px) rotateX(886deg) rotateY(989deg);
+          transform: perspective(2000px) translateY(288px) translateX(-97px) translateZ(58px) rotateX(886deg) rotateY(989deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container.hover div:nth-child(12) {
+  -webkit-transition: all 1s 0.6s ease;
+  transition: all 1s 0.6s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(223px) translateX(-42px) translateZ(271px) rotateX(924deg) rotateY(470deg);
+          transform: perspective(2000px) translateY(223px) translateX(-42px) translateZ(271px) rotateX(924deg) rotateY(470deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container.hover div:nth-child(13) {
+  -webkit-transition: all 1s 0.65s ease;
+  transition: all 1s 0.65s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(-6px) translateX(1px) translateZ(-7px) rotateX(719deg) rotateY(703deg);
+          transform: perspective(2000px) translateY(-6px) translateX(1px) translateZ(-7px) rotateX(719deg) rotateY(703deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container.hover div:nth-child(14) {
+  -webkit-transition: all 1s 0.7s ease;
+  transition: all 1s 0.7s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(15px) translateX(-10px) translateZ(110px) rotateX(910deg) rotateY(899deg);
+          transform: perspective(2000px) translateY(15px) translateX(-10px) translateZ(110px) rotateX(910deg) rotateY(899deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container.hover div:nth-child(15) {
+  -webkit-transition: all 1s 0.75s ease;
+  transition: all 1s 0.75s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(218px) translateX(84px) translateZ(169px) rotateX(691deg) rotateY(598deg);
+          transform: perspective(2000px) translateY(218px) translateX(84px) translateZ(169px) rotateX(691deg) rotateY(598deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container.hover div:nth-child(16) {
+  -webkit-transition: all 1s 0.8s ease;
+  transition: all 1s 0.8s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(-10px) translateX(-47px) translateZ(-98px) rotateX(551deg) rotateY(972deg);
+          transform: perspective(2000px) translateY(-10px) translateX(-47px) translateZ(-98px) rotateX(551deg) rotateY(972deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container.hover div:nth-child(17) {
+  -webkit-transition: all 1s 0.85s ease;
+  transition: all 1s 0.85s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: perspective(2000px) translateY(93px) translateX(-25px) translateZ(264px) rotateX(794deg) rotateY(854deg);
+          transform: perspective(2000px) translateY(93px) translateX(-25px) translateZ(264px) rotateX(794deg) rotateY(854deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container div {
+  opacity: 1;
+}
+
+.container .space {
+  width: 2px;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style2.css.map */

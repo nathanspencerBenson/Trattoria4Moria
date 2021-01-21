@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;400&family=Lobster&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
 *{
   margin: 0;
   padding: 0;
@@ -6,13 +7,10 @@
 }
 
 
-.nav-links a{
-  font-size: 1.8em;
+nav{
+  font-size: 1.1em;
 }
 
-.logo a{
-  font-size: 3.5em;
-}
 
 
 main{
@@ -45,7 +43,7 @@ main p{
   text-align: center;
   margin-bottom: 40px;
 }
-.container{
+.container-form{
   margin-top: 50px;
 }
 
@@ -87,9 +85,7 @@ main p{
     font-size:3em;
 
 }
-.logo a{
-  font-size: 2.3em;
-}
+
 
 
 }

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;400&family=Lobster&family=Playfair+Display&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
 
 
 *{
@@ -22,7 +23,7 @@
     justify-content: space-around;
     width: 100%;
     padding: 20px 0;
-    background-color: rgba(0, 0, 0, 0.8)
+    background-color: rgba(0, 0, 0, 0.767)
 
 }
 #sticky-logo{
@@ -104,7 +105,7 @@ main{
     flex-direction: column;
     align-items: center;
     color: #222222;
-    font-family: 'Imbue', 'San-serif';
+    font-family: 'Playfair Display', 'San-serif';
     font-size: 1.2em;
 
 }
@@ -114,6 +115,7 @@ main{
     justify-content: center;
     align-items: center;
     color: white;
+    margin-top: -100px;
     background: url("../images/drinks.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,24 +175,23 @@ h2{
 
 
 .hotdrinks-items, .beer-items, .softdrink-items, .wine-items{
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     text-align: center;
     border-bottom: 2px solid #222222;
     margin-bottom: 60px;
     padding-bottom: 60px;
+    margin-top: 60px;
     
+}
+.hotdrinks-items{
+    margin-top: 0;
 }
 
 @media only screen and (max-width: 1024px){
 
     
-    .hotdrinks-items, .beer-items, .softdrink-items, .wine-items{
-        display: flex;
-        flex-direction: column;
-        
-    }
+    
     .coffee-image, .wine-image, .beer-image{
         width: 85vw;
     
@@ -205,6 +206,7 @@ h2{
    .sardinia{
        justify-content: center;;
        text-align: center;
+       margin-top: 0;
    }
    
    .hotdrinks-items div, .beer-items div, .softdrink-items div, .wine-items div{       
@@ -224,11 +226,19 @@ h2{
 
 h1 {
     font-size:2.5em;
-   
+    margin-left: 15vw;
 }
-    h2 {
-        font-size: 1.5em;
-    }
+h2 {
+    font-size: 1em;
+    margin-left: 15vw;
+}
+
+h3{
+    font-size: 0.8em;
+}
+p{
+    font-size: 0.8em;
+}
     .sticky-menu{
         flex-direction: column;
         left: 0;
