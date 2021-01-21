@@ -211,6 +211,14 @@
     margin: 0 3px;
   }
 }
+@media only screen and (max-width : 420px) {
+  .container .btn a {
+      font-size: 0.8em;
+  }
+  .container .btn a span{
+    margin: 0 3px;
+  }
+}
 
 
 
